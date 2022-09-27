@@ -1,0 +1,8 @@
+node("UBUNTUNODE-JDK-11"){
+    stage("git cloning"){
+        git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic.git'
+    stage("maven execute"){
+            sh 'mvn package'
+        }
+    }
+}
