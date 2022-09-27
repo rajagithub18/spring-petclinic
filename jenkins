@@ -5,7 +5,7 @@ node("UBUNTUNODE-JDK-11"){
             sh 'mvn package'
         }
      stage("archieve"){
-       archiveArtifacts artifacts: '**/target/*.jar', followSymlinks: false,
+       archiveArtifacts artifacts: '**/target/*.jar', followSymlinks: false
        junit testResults : '**/target/surefire-reports/*.xml'
      }
        
