@@ -4,7 +4,7 @@ pipeline{
     stage{
 	  steps{
 	    git branch: 'main', url: 'https://github.com/rajagithub18/spring-petclinic.git'
-        sh 'mvn package'		
+            sh 'mvn package'		
 	  }
 	}
   
